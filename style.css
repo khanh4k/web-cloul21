@@ -1,0 +1,93 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  color: #e74c3c !important;
+}
+.custom-nav-link {
+  position: relative;
+  color: #333 !important;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+.custom-nav-link:hover,
+.custom-nav-link.active {
+  color: #dc3545 !important;
+}
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background-color: #dc3545;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.custom-nav-link:hover::after,
+.custom-nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Hero */
+.hero-img {
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.hero-overlay {
+  color: white;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Food card */
+.food-card {
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.food-card img {
+  transition: transform 0.4s;
+}
+.food-card:hover img {
+  transform: scale(1.05);
+}
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Button filter */
+.btn-filter {
+  background-color: #fff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 25px;
+  padding: 0.4rem 1.2rem;
+  transition: 0.3s;
+}
+.btn-filter:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  color: #ddd;
+}
+footer a {
+  color: #ddd;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #fff;
+}
+footer .social a:hover {
+  transform: scale(1.2);
+}
